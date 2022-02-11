@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+	<button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+		(click)="mostrarBotones()">
+		<mat-icon>menu</mat-icon>
+	</button>
+
+	<a routerLink="/emergentes">
+		<span>My App</span>
+	</a>
+
+	<button mat-raised-button color="warn">Accent</button>
+
+	{{ otraVar }}
+	<span class="example-spacer"></span>
+
+	<mat-icon> brightness_5 </mat-icon>
+	<mat-slide-toggle [formControl]="toggleControl"></mat-slide-toggle>
+	<mat-icon> bedtime </mat-icon>
+</mat-toolbar>
